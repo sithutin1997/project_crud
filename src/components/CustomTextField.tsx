@@ -14,7 +14,7 @@ const CustomTextField = ({value, id}: {value: string, id: string}) => {
     ],
   })
   const [name, setName] = React.useState(value)
-  const handleEnter = (e:any) => {
+  const handleEnter = (e: React.KeyboardEvent) => {
       if(e.key === 'Enter') {
         updateProject({
           variables: {
